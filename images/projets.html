@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Suha KUT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="navbar">
+        <div class="logo">
+            Suha KUT -
+            <img src="./images/logo.png" alt="logo" class="logo-img"> 
+        </div>
+        <!-- Menu Hamburger pour les petits écrans -->
+        <div class="navbar-toggle" id="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <ul class="navbar-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formation.html">Formation</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction à la page -->
+    <section id="welcome" class="welcome-message">
+        <p>Voici mes projets scolaires réalisés dans le cadre de nos SAé (Situation d'Apprentissage et d'Évaluation).</p>
+    </section>
+
+    <!-- Qu'est-ce qu'une SAé ? -->
+    <section id="sae-explanation" class="sae-explanation">
+        <div class="sae-message">
+            <h2>Qu'est-ce qu'une SAé ?</h2>
+            <p>
+                Une SAé (Situation d'Apprentissage et d'Évaluation) est un projet ou un travail pratique réalisé dans le cadre de la formation. Elle permet de mettre en application les connaissances acquises pendant les cours à travers des études de cas, des développements techniques, des analyses ou des projets en groupe. Chaque SAé est évaluée afin de mesurer les compétences acquises et de préparer les étudiants aux défis professionnels.
+            </p>
+        </div>
+    </section>
+
+    <!-- Galerie de projets -->
+    <section id="projects-gallery" class="projects-gallery">
+        <h2>Mes Projets (en cours de déploiement ..)</h2>
+        <div class="project-menu">
+            <button class="project-filter active" data-filter="all">Tous les projets</button>
+            <button class="project-filter" data-filter="network">Réseaux</button>
+            <button class="project-filter" data-filter="iot">Internet des Objets & Mobilité</button>
+        </div>
+    
+        <!-- Projets -->
+        <div class="projects-list">
+            <!-- Projet 1 -->
+            <div class="project-item network" data-project="1">
+                <img src="./images/ip.png" alt="Projet 1 Réseaux">
+                <h3>Mise en place d'un réseau d'entreprise multi-sites</h3>
+                <p>Lors de ce projet, nous devions mettre en place un réseau d'entreprise multisite.</p>
+    
+                <!-- Éléments supplémentaires pour la modale -->
+                <div class="project-details" style="display:none;">
+                    <br>
+                    <h4>Détails du projet</h4>
+                    <p>Nous devions répondre à un appel d'offres d'une entreprise fictive dénommée "Beerok", spécialiste de la chaussure sportive, souhaitant restructurer son infrastructure réseau et informatique sur l’ensemble de ses sites situés en France.
+
+                        Étant un groupe de consultants dans une SSII, nous avons élaboré une proposition en réponse à leur cahier des charges.</p>
+                    <a href="https://docs.google.com/document/d/1dyMTGcSQkmM2ZgcNbWm8m1xni5k_8hFshWWYdsE3QYs/edit?usp=sharing" target="_blank">Voir plus (rapport - Google Doc)</a>
+                </div>
+            </div>
+    
+            <!-- Projet 2 -->
+            <div class="project-item iot" data-project="2">
+                <img src="./images/mc.png" alt="Projet 2 IoT">
+                <h3>IoT : Gant connecté sur le jeu Minecraft</h3>
+                <p>Deux joueurs jouent à Minecraft en réseau pour trouver un diamant caché, chaque joueur utilisant un gant connecté. Ce gant permet d'activer des superpouvoirs et des pièges via des boutons placés sur les doigts</p>
+    
+                <!-- Éléments supplémentaires pour la modale -->
+                <div class="project-details" style="display:none;">
+                    <br>
+                    <h4>Détails du projet</h4>
+                    <p>Ce projet avait pour but de créer une infrastructure IoT permettant à deux joueurs de jouer à une partie spéciale de Minecraft, en réseau, avec des gants connectés qui leur fournissent des superpouvoirs et pièges pour battre leur adversaire.</p>
+                    <a href="https://github.com/Chadi25/SAE304_Decouvrir_et_mettre_en_place_un_r-seau_IoT" target="_blank">Voir plus (projet Github)</a>
+                </div>
+            </div>
+    
+            <!-- Projet 3 -->
+            <div class="project-item iot" data-project="3">
+                <img src="./images/iot.jpg" alt="Projet 3 IoT">
+                <h3>Sécurisation Datacenter avec IoT</h3>
+                <p>Dans un datacenter, les risques sont multiples, c'est pourquoi nous allons multiplier les mesures de sécurité et de redondance : électrique, thermique, réseau, incendie, etc.
+
+                </p>
+    
+                <!-- Éléments supplémentaires pour la modale -->
+                <div class="project-details" style="display:none;">
+                    <br>
+                    <h4>Détails du projet</h4>
+                    <p>Ce projet vise à établir un système de sécurité avancé pour un datacenter en utilisant la technologie IoT. Il implique la mise en place de différents capteurs dans des zones spécifiques (rouge, jaune, verte) pour surveiller et contrôler l'accès ainsi que les conditions environnementales.</p>
+                    <a href="https://github.com/Chadi25/SA-4.IOM.01-Impl-menter-les-r-seaux-et-protocoles-sans-fil-d-di-s-l-IoT" target="_blank">Voir plus (projet Github)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Fenêtre modale pour les détails du projet -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <div id="modal-details"></div> <!-- Contenu dynamique de la modale -->
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2024 - Suha KUT. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

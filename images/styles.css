@@ -1,0 +1,728 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f9f9f9;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #0078D7;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #005bb5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Style de la div logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espacement entre le logo et le texte */
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Style de l'image du logo */
+.logo-img {
+    width: 30px; /* Taille de l'image (ajuste selon tes besoins) */
+    height: auto; /* Conserve le ratio d'aspect de l'image */
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Menu Hamburger */
+.navbar-toggle {
+    display: none; /* Masquer le bouton hamburger par défaut */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: auto; /* Aligner le hamburger à droite */
+    
+}
+
+.navbar-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Cacher les liens du menu par défaut */
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+
+}
+
+.navbar ul li a {
+    padding: 0.5rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #0078D7;
+}
+
+
+/* Home Page - Specific Styles */
+.welcome-message {
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px auto;
+    max-width: 800px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 5px auto;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 15px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: auto;
+    border-radius: 17%;
+    border: 5px solid white;
+    transition: transform 0.3s ease;
+    margin: 0;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1);
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-text p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    color: #333;
+}
+
+/* Section Présentation */
+#presentation {
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.presentation-text p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.cv-button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cv-button .button {
+    text-align: center;
+    display: inline-block;
+    background-color: #0078D7;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button .button:hover {
+    background-color: #005fa3;
+}
+
+/* Footer Fix - En bas de page */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+    margin-top: auto; /* Garantir que le footer se positionne à la fin de la page */
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Carousel Section */
+.carousel-section {
+    margin-top: 2rem;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    margin: 2rem auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transition fluide */
+    will-change: transform;
+}
+
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+    padding: 2rem 1rem; /* Ajuste les marges pour espacer le texte */
+    background-color: #fff;
+}
+
+.carousel-item img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.carousel-item h2 {
+    color: #0078D7;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-item p {
+    color: #555;
+    margin: 0 20px; /* Ajoute une marge sur les côtés du texte */
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 20px;
+}
+
+.carousel-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Réduction de l'espacement entre les sections dans formation.html */
+body.formation-page #formation {
+    margin-bottom: 0rem; /* Réduit l'espace sous la section formation */
+}
+
+body.formation-page #option-iom {
+    margin-top: 0; /* Réduit l'espace au-dessus de l'option IoM */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .presentation-container {
+        margin: 20px auto;
+        padding: 0 1rem;
+    }
+
+    .presentation-text {
+        padding: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel-item {
+        padding: 1rem 1rem;
+    }
+
+    .carousel-item p {
+        margin: 0 15px;
+    }
+
+    /* Masquer le menu dans le mode mobile */
+    .navbar-links {
+        display: none; /* Masquer les liens dans le mode mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Positionner le menu juste sous le header */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        gap: 1rem;
+        z-index: 999; /* Assurez-vous que les liens sont au-dessus de l'icône hamburger */
+    }
+
+    .navbar-links.active {
+        display: flex; /* Afficher les liens lorsque le menu est actif */
+    }
+
+    .navbar-toggle {
+        display: flex; /* Afficher le bouton hamburger sur les petits écrans */
+        z-index: 1000; /* Assurez-vous que l'icône hamburger est au-dessus du menu */
+        position: relative; /* Positionner le hamburger dans son flux normal */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar ul li a {
+        padding: 1rem;
+        text-align: center;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .navbar-links li a:hover {
+        color: #0078D7;
+    }
+}
+
+/* Section Réseaux Sociaux */
+#social-media {
+    text-align: center;
+    padding-top: 10rem;
+    background-color: #f8f8f8;
+}
+
+#social-media h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #333; /* Couleur du texte */
+    font-size: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+}
+
+.social-item {
+    display: flex;
+    flex-direction: column; /* Aligne verticalement */
+    align-items: center;
+}
+
+.social-item img {
+    width: 50px; /* Taille des icônes */
+    height: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-item img:hover {
+    transform: scale(1.1); /* Zoom léger au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre */
+}
+
+/* Section SAé */
+#sae-explanation {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#sae-explanation h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#sae-explanation p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Section Galerie de projets */
+#projects-gallery {
+    padding: 2rem 0;
+    background-color: #f8f8f8;
+}
+
+#projects-gallery h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-menu {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-filter {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.project-filter.active {
+    background-color: #333;
+    color: white;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-item {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer; /* Permet de cliquer pour ouvrir les détails */
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.05); /* Agrandissement au survol */
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Affichage des projets sélectionnés */
+.project-item.network, .project-item.iot {
+    display: block; /* Par défaut, afficher tous les projets */
+}
+
+/* Style de la modale */
+#project-modal {
+    display: none; /* La modale est cachée par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Contenu de la modale */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%; /* Ajuste la taille de la modale selon tes besoins */
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+/* Bouton de fermeture */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Style pour les projets */
+.project-item {
+    cursor: pointer;
+    /* Ajoute ici des styles pour rendre les projets interactifs */
+}
+
+.project-item:hover {
+    opacity: 0.8; /* Effet au survol */
+}
+/* Responsivité */
+@media (max-width: 768px) {
+    .projects-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
+
+/* Nouveau style pour le paragraphe dans SAE Explanation */
+.sae-message {
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px auto;
+    max-width: 800px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Modification pour augmenter la taille et la lisibilité des modales */
+.modal-content {
+    background: white;
+    padding: 30px; /* Augmenter l'espacement à l'intérieur */
+    border-radius: 10px; /* Coins plus arrondis */
+    width: 90%; /* La largeur de la modale */
+    max-width: 800px; /* Limite la largeur */
+    text-align: left; /* Texte aligné à gauche pour plus de lisibilité */
+    position: relative;
+    font-size: 1.1rem; /* Augmentation de la taille de la police */
+}
+
+.modal-content h3 {
+    font-size: 2rem; /* Agrandir le titre de la modale */
+    margin-bottom: 1rem;
+    color: #0078D7;
+}
+
+.modal-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Lien "Voir plus" */
+.modal-content a {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0078D7;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Lien "Voir plus" au survol */
+.modal-content a:hover {
+    background-color: #005fa3;
+}
+
+/* Style de fermeture de la modale */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px; /* Agrandir le bouton de fermeture */
+    cursor: pointer;
+    color: #333;
+}
+
+/* Style pour le bouton Voir plus */
+.btn-voir-plus {
+    display: block;
+    padding: 10px 20px;
+    margin-top: 50px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}
+
+.btn-voir-plus:hover {
+    background-color: #0056b3;
+    color : black
+}
+/* Bouton "Voir plus" */
+.see-more-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.see-more-btn:hover {
+    background-color: #45a049;
+}
+
+/* Modale */
+.modal {
+    display: none; /* Cache la modale par défaut */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Boutons dans la modale */
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modal-btn {
+    background-color: #008CBA;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.modal-btn:hover {
+    background-color: #007B9A;
+}
+
+/* Bouton de fermeture de la modale */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Centrer la vidéo et rendre l'iframe réactif */
+.video-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    max-width: 100%;
+}
